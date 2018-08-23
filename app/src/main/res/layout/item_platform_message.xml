@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_padding"
+        tools:text="09:30"/>
+    <LinearLayout android:id="@+id/ll_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_common_corners_white_div"
+        android:padding="@dimen/common_padding"
+        android:layout_margin="@dimen/common_padding"
+        android:orientation="vertical">
+        <TextView android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextMain_Title"
+            tools:text="快递费用调整通知"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="由于快递成本上涨，商城快递费用统一上调至12元，速来查看详情商城快递费用统一上调至12元商城快递费用统一上调至12元商城快递费用统一上调至12元"/>
+    </LinearLayout>
+</LinearLayout>

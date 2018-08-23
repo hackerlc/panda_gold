@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_common_corners_white_div">
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorTextMain_Title"
+        android:textSize="20sp"
+        tools:text="永坤黄金" />
+
+    <View
+        android:id="@+id/line1"
+        style="@style/Common_Line"
+        android:layout_below="@id/tv_shop_name"
+        android:layout_marginBottom="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_order_goods">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_goods"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:text="商品金额" />
+
+    <TextView
+        android:id="@+id/express"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginTop="@dimen/common_padding"
+        android:text="快递费用" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rv_goods"
+        android:layout_marginRight="@dimen/common_padding"
+        android:textColor="@color/colorPrimaryAlf"
+        tools:text="￥5000.00" />
+
+    <TextView
+        android:id="@+id/tv_express"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_price"
+        android:layout_marginRight="@dimen/common_padding"
+        android:layout_marginTop="@dimen/common_padding"
+        android:textColor="@color/colorPrimaryAlf"
+        tools:text="￥5000.00" />
+
+    <View
+        android:id="@+id/line2"
+        style="@style/Common_Line"
+        android:layout_below="@id/express"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginTop="@dimen/common_padding"
+        android:text="实付" />
+
+    <TextView
+        android:id="@+id/tv_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line2"
+        android:layout_marginRight="@dimen/common_padding"
+        android:layout_marginTop="6dp"
+        android:text="1524.00"
+        android:textColor="@color/colorTextMain_Title"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_total_price"
+        android:layout_below="@id/line2"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@id/tv_total_price"
+        android:text="￥"
+        android:textColor="@color/colorTextMain_Title" />
+</RelativeLayout>

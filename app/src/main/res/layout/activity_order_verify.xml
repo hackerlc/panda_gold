@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.order.OrderVerifyActivity">
+    <ImageView android:id="@+id/iv_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="@dimen/common_padding"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:src="@drawable/bg_left"/>
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <RelativeLayout android:id="@+id/rl_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="50dp">
+        <TextView android:id="@+id/bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/colorTextMain_Title"
+            android:textSize="16sp"
+            android:text="合计："/>
+        <TextView android:id="@+id/tv_all_price"
+            android:layout_toRightOf="@id/bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryAlf"
+            tools:text="￥200000.00"/>
+        <Button android:id="@+id/btn_ok"
+            style="@style/Common_Btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="下单"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_data"
+        android:layout_below="@id/ic_head"
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/common_padding"
+        tools:listitem="@layout/item_order_verify"/>
+</RelativeLayout>

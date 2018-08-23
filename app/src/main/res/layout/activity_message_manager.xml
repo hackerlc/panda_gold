@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.message.manager.MessageManagerActivity">
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <RelativeLayout android:id="@+id/rl_online"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView android:id="@+id/img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/title"
+            android:layout_toRightOf="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="在线客服"
+            android:textColor="@color/colorTextMain_Title"/>
+        <TextView
+            android:layout_toRightOf="@id/img"
+            android:layout_below="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有问题请咨询我"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_my_item_right"/>
+    </RelativeLayout>
+    <View style="@style/Common_Line"/>
+    <RelativeLayout android:id="@+id/rl_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView android:id="@+id/img_message"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/title_message"
+            android:layout_toRightOf="@id/img_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="平台通知"
+            android:textColor="@color/colorTextMain_Title"/>
+        <TextView
+            android:layout_toRightOf="@id/img_message"
+            android:layout_below="@id/title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用调整通知更新啦"/>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_my_item_right"/>
+    </RelativeLayout>
+    <View style="@style/Common_Line"/>
+</LinearLayout>

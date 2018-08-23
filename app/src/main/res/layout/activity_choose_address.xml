@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.my.address.choose.ChooseAddressActivity">
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <Button android:id="@+id/btn_new"
+        style="@style/Common_Btn"
+        android:layout_margin="@dimen/common_padding"
+        android:layout_alignParentBottom="true"
+        android:text="+新建收货地址"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_data"
+        android:layout_below="@id/ic_head"
+        android:layout_above="@id/btn_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_choose_address"/>
+</RelativeLayout>

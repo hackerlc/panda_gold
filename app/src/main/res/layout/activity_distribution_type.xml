@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.my.address.distribution.DistributionTypeActivity">
+    <include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <RelativeLayout android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:text="快递配送　　您的商品统一由顺丰快递进行配送"
+            android:textColor="@color/colorTextMain_Title"/>
+        <CheckBox android:id="@+id/cb_address"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/Common_Line"/>
+    <RelativeLayout android:id="@+id/rl_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:text="门店提货　　全国1200个线下门店支持提货"
+            android:textColor="@color/colorTextMain_Title"/>
+        <CheckBox android:id="@+id/cb_pick_up"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View style="@style/Common_Line_Height"/>
+    <RelativeLayout android:id="@+id/rl_choose_address"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:text="请选择收货地址"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_my_item_right"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_choose_pick_up"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:text="请选择自提地址"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_my_item_right"/>
+    </RelativeLayout>
+    <View style="@style/Common_Line"/>
+</LinearLayout>

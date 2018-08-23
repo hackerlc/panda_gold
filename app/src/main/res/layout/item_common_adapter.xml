@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_financial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:background="@drawable/bg_common_corners_gray_div_other">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_below="@id/iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_padding"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextMain_Title"
+        tools:text="奥术大师大所大所大所大Asdasd"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_below="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding"
+        android:layout_marginBottom="@dimen/common_padding"
+        android:textColor="@color/colorPrimaryAlf"
+        android:textSize="18sp"
+        tools:text="￥1222.00"/>
+</RelativeLayout>

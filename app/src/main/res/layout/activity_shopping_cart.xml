@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cart.ShoppingCartActivity">
+<include android:id="@+id/ic_head" layout="@layout/head_common"/>
+    <RelativeLayout android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true">
+        <CheckBox android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_toRightOf="@id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="全选"/>
+
+        <!--合计下单-->
+        <LinearLayout android:id="@+id/ll_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："/>
+            <TextView android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="￥4005.99"/>
+            <Button android:id="@+id/btn_ok"
+                style="@style/Common_Btn"
+                android:layout_height="35dp"
+                android:text="下单"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <!--合计下单 end-->
+        <!--删除-->
+        <LinearLayout android:id="@+id/ll_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <Button android:id="@+id/btn_del"
+                style="@style/Common_Btn"
+                android:layout_height="35dp"
+                android:text="删除"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <!--删除end-->
+    </RelativeLayout>
+    <!--购物车内容-->
+    <RelativeLayout
+        android:layout_below="@id/ic_head"
+        android:layout_above="@id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_padding"
+        android:background="@color/colorBackground">
+        <ExpandableListView android:id="@+id/elv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="@dimen/common_padding"
+            android:background="@android:color/white"
+            tools:listitem="@layout/item_child_cart">
+
+        </ExpandableListView>
+    </RelativeLayout>
+    <!--购物车内容end-->
+</RelativeLayout>
